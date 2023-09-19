@@ -46,6 +46,7 @@ html, body {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     &__pic,
     &__info,
@@ -53,11 +54,9 @@ html, body {
       width: 50%;
       height: 50%;
     }
-    &__info{
-      margin-left: auto;
-    }
     &__tech{
       width: 100%;
+      margin-top: 100px;
     }
   }
 }
@@ -79,16 +78,12 @@ html, body {
   text-align: center;
 }
 
-.pic{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
 .tech-stack-container{
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tech-flipper{
@@ -121,5 +116,13 @@ html, body {
 .tech-name{
   font-size: 35px;
 }
+
+.tech.HTML{
+  width: 170px;
+}
+.tech.CSS{
+  width: 210px;
+}
+
 
 
