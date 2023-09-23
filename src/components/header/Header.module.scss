@@ -1,0 +1,24 @@
+
+.header{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 65px;
+
+  &__name{ 
+    text-align: center;
+    color:rgb(234, 234, 226);
+    font-size: 85px;
+    font-family: 'Permanent Marker';
+    line-height: 1;
+  }
+
+  &__title{
+    text-align: center;
+    color:rgb(159, 159, 152);
+    font-size: 35px;
+    font-family: 'Permanent Marker';
+  }
+}

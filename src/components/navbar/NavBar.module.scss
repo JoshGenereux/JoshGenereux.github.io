@@ -1,0 +1,36 @@
+.navContainer{
+  width: 98vw;
+  height: 55px;
+  background-color: rgb(180, 180, 176);
+  position: fixed;
+  top: 0;
+  opacity: .9;
+  z-index: 5;
+  border-radius: 50px;
+
+  ul{ 
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .navLink{
+      width: 250px;
+      color:rgb(23, 23, 21);
+      font-family: 'Permanent Marker';
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.7s ease all;
+      &:hover{
+        text-decoration: underline;
+        transform:
+        perspective(800px)
+        scale(1.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+
+.home{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forest{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  filter: grayscale(100%);
+}
+
+.picContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border: rgb(234, 234, 226) 2px solid;
+  border-radius: 50%;
+  justify-content: center;
+  z-index: 0;
+}
+
+.infoPic{
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
