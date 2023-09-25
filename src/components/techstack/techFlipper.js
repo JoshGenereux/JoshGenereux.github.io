@@ -8,7 +8,7 @@ const TechFlipper = ({props}) => {
   return(
     <div className={styles.flipper}>  
       <h1 className={styles.name}>{name}</h1>
-      <img className={`tech ${name}`} src={asset} alt=""/>
+      <img className={styles[name]} src={asset} alt=""/>
     </div>
   )
 };
