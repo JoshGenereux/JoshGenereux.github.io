@@ -9,14 +9,14 @@ import styles from './home.module.scss';
 function Home() {
 
   return (
-    <div className={styles.home}>
+    <div className={styles.home}  id="home">
       <img className={styles.forest} alt="" src={forest} />
       <NavBar/>
       <Header/>
       <div className={styles.picContainer}>
         <img className={styles.infoPic} src={pic} alt="" />
       </div>
-      <TechStack id="techStack"/>
+      <TechStack/>
     </div>
   );
 }

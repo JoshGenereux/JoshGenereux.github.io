@@ -7,7 +7,7 @@ import styles from './techstack.module.scss';
 const TechStack = () => {
 
   return (
-    <div className={styles.tech}>  
+    <div className={styles.tech}  id="techStack">  
       <h1 className={styles.header}>My Tech Stack</h1>
       <div className={styles.techStackContainer}>
         {techObj.map((t, i) => (

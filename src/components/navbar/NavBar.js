@@ -1,20 +1,17 @@
-
 import styles from './NavBar.module.scss'
 
 const NavBar = () =>{
-  const scrollTo = (e) => {  
-    console.log(window.document.all)
-  }
+  
 
   return(
     <nav className={styles.navContainer}>
       <ul>
-        <li className={styles.navLink}>Josh G</li>
-        <li className={styles.navLink}>About Me</li>
-        <li className={styles.navLink} onClick={scrollTo}>Tech Stack</li>
-        <li className={styles.navLink}>Projects</li>
-        <li className={styles.navLink}>Resume</li>
-        <li className={styles.navLink}>Contact</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('home').scrollIntoView({behavior:"smooth"}))}>Josh G</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('info').scrollIntoView({behavior:"smooth"}))}>About Me</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('techStack').scrollIntoView({behavior:"smooth"}))}>Tech Stack</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('projects').scrollIntoView({behavior:"smooth"}))}>Projects</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('techStack').scrollIntoView({behavior:"smooth"}))}>Resume</li>
+        <li className={styles.navLink} onClick={(()=> document.getElementById('techStack').scrollIntoView({behavior:"smooth"}))}>Contact</li>
       </ul>
     </nav>
   )
