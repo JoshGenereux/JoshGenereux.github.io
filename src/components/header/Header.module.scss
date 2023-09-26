@@ -1,5 +1,4 @@
-
-.header{
+.header {
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -7,18 +6,20 @@
   z-index: 1;
   margin-top: 65px;
 
-  &__name{ 
+  &__name {
     text-align: center;
-    color:rgb(234, 234, 226);
-    font-size: 85px;
-    font-family: 'Permanent Marker';
+    color: #0b132b;
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
     line-height: 1;
   }
 
-  &__title{
+  &__title {
     text-align: center;
-    color:rgb(159, 159, 152);
+    color: #261c15;
     font-size: 35px;
-    font-family: 'Permanent Marker';
+    font-family: 'Kaushan Script', cursive;
   }
 }

@@ -1,22 +1,19 @@
-import React from "react";
-import Header from "../../components/header/Header";
-import NavBar from "../../components/navbar/NavBar";
-import forest from '../../assets/forest2.jpeg';
+import React from 'react';
+import Header from '../../components/header/Header';
 import pic from '../../assets/facepic.jpeg';
-import TechStack from '../../components/links/Links';
+import Links from '../../components/links/Links';
 import styles from './home.module.scss';
 
 function Home() {
-
   return (
-    <div className={styles.home}  id="home">
-      <img className={styles.forest} alt="" src={forest} />
-      <NavBar/>
-      <Header/>
-      <div className={styles.picContainer}>
-        <img className={styles.infoPic} src={pic} alt="" />
+    <div className={styles.home} id="home">
+      <Header />
+      <div className={styles.bottomContainer}>
+        <div className={styles.picContainer}>
+          <img className={styles.infoPic} src={pic} alt="" />
+        </div>
+        <Links />
       </div>
-      <TechStack/>
     </div>
   );
 }
