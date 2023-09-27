@@ -1,0 +1,91 @@
+.projects {
+  width: 1200px;
+  height: 900px;
+  border-left: 1px solid #f0ebe5;
+  border-right: 1px solid #f0ebe5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current {
+  color: #f0ebe5;
+  font-size: 15px;
+  font-family: 'Speedy';
+}
+
+.header {
+  font-size: 40px;
+  color: #dcc8b6;
+  font-family: 'Speedy';
+}
+
+.container {
+  margin-top: 40px;
+  width: 1100px;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 75px;
+  color: #f0eee7;
+  font-family: 'StarShield';
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0;
+  z-index: 5;
+}
+
+.planet {
+  width: 200px;
+  z-index: 1;
+}
+.moon {
+  width: 205px;
+}
+
+p {
+  font-family: 'Typewriter';
+  font-size: 20px;
+  text-align: center;
+  color: #f0ebe5;
+  position: relative;
+  bottom: 37%;
+  margin: 0;
+}
+
+.beach {
+  position: relative;
+  bottom: 40%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 55px;
+}
+
+li {
+  color: #eadfd5;
+  font-family: 'Speedy';
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  bottom: 30%;
+  z-index: 2;
+  list-style: none;
+  text-align: center;
+}
