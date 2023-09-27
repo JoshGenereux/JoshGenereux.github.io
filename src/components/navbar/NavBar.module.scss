@@ -1,42 +1,8 @@
-.navContainer {
-  width: 1200px;
-  height: 55px;
-  margin-top: 15px;
-  position: fixed;
-  top: 0;
-  z-index: 5;
+.navbar {
+  width: 100%;
+  height: 75px;
+  border: 1px solid black;
+}
 
-  ul {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    .navLink {
-      width: 160px;
-      background-color: #e5ebea;
-      height: 100%;
-      line-height: 52px;
-      color: #a6777a;
-      font-family: 'Pacifico', cursive;
-      font-size: 30px;
-      text-align: center;
-
-      transform-style: preserve-3d;
-      border-radius: 32px;
-      box-shadow: 1px 1px 0 1px #dce3e2, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-        28px 28px 28px 0 rgba(34, 33, 81, 0.25);
-      transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
-
-      &:hover {
-        cursor: pointer;
-        transform: translate3d(0px, -5px, 0px);
-        box-shadow: 1px 1px 0 1px #dce3e2, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
-          54px 54px 28px -10px rgba(34, 33, 81, 0.15);
-      }
-    }
-  }
+.button {
 }
