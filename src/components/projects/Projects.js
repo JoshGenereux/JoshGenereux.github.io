@@ -26,7 +26,7 @@ const Projects = () => {
           <p>
             Jpass is a password manager, built using React.js, Javascript, CSS,
             HTML and SQL. Storing all of the passowords in a SQL database, and
-            utilizing Sequelize.js in the back end to send the information over.
+            utilizing Sequelize.js in the back end.
           </p>
         </div>
         <div className={styles.box}>
