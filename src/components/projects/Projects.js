@@ -65,6 +65,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
+      <div className={styles.more}>More to come...</div>
     </div>
   );
 };
