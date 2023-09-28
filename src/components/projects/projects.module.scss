@@ -64,7 +64,8 @@ p {
   margin: 0;
 }
 
-.beach {
+.surface {
+  filter: blur(2px);
   position: relative;
   bottom: 40%;
 }

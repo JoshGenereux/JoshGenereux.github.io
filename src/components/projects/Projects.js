@@ -22,7 +22,7 @@ const Projects = () => {
             <li>Sequelize</li>
             <li>Node</li>
           </ul>
-          <img src={beach} alt="" className={styles.beach} />
+          <img src={beach} alt="" className={styles.surface} />
           <p>
             Jpass is a password manager, built using React.js, Javascript, CSS,
             HTML and SQL. Storing all of the passowords in a SQL database, and
@@ -37,7 +37,7 @@ const Projects = () => {
             <li>css</li>
             <li>Javascript</li>
           </ul>
-          <img src={marsSurface} alt="" className={styles.beach} />
+          <img src={marsSurface} alt="" className={styles.surface} />
           <p>
             Live Fitness, is a fitness tracker and workout app, that stores all
             of your workouts on a SQL database. You can create a workout each
@@ -57,7 +57,7 @@ const Projects = () => {
             <li>API</li>
             <li>Node</li>
           </ul>
-          <img src={moonSurface} alt="" className={styles.beach} />
+          <img src={moonSurface} alt="" className={styles.surface} />
           <p>
             A simple weather app, hooked up to an API. you can log in and search
             any location in the worls, and the api will make a call and send you

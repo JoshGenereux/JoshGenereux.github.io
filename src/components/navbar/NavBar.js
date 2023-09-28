@@ -3,12 +3,30 @@ import styles from './navbar.module.scss';
 
 const NavBar = () => {
   return (
-    <div className={styles.navbar}>
-      <div className={styles.button}>Home</div>
-      <div className={styles.button}>Projects</div>
-      <div className={`${styles.button} ${styles.name}`}>Josh</div>
-      <div className={styles.button}>Resume</div>
-      <div className={styles.button}>Contact</div>
+    <div className={styles.navbar} id="navBar">
+      <button
+        className={styles.button}
+        onClick={() =>
+          document
+            .getElementById('navBar')
+            .scrollIntoView({ behavior: 'smooth' })
+        }
+      >
+        Home
+      </button>
+      <button
+        className={styles.button}
+        onClick={() =>
+          document
+            .getElementById('projects')
+            .scrollIntoView({ behavior: 'smooth' })
+        }
+      >
+        Projects
+      </button>
+      <button className={`${styles.button} ${styles.name}`}>Josh</button>
+      <button className={styles.button}>Resume</button>
+      <button className={styles.button}>Contact</button>
     </div>
   );
 };
