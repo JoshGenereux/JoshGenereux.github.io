@@ -13,25 +13,12 @@ const Projects = () => {
       <div className={styles.sideBug}>
         <div className={styles.sideTop}></div>
         <div className={styles.sideInfo}>
-          <ul className={styles.ul}>
-            <li className={styles.li}>3</li>
-            <li className={styles.li}>9</li>
-            <li className={styles.dot}>.</li>
-            <li className={styles.li}>7</li>
-            <li className={styles.li}>5</li>
-            <li className={styles.li}>8</li>
-            <li className={styles.li}>9</li>
-            <li className={styles.li}>N</li>
-            <li className={styles.li}>&nbsp;</li>
-            <li className={styles.li}>8</li>
-            <li className={styles.li}>4</li>
-            <li className={styles.dot}>.</li>
-            <li className={styles.li}>1</li>
-            <li className={styles.li}>9</li>
-            <li className={styles.li}>1</li>
-            <li className={styles.li}>6</li>
-            <li className={styles.li}>W</li>
-          </ul>
+          <button className={styles.homeButton}>
+            <span className={styles.homeText}>H</span>
+            <span className={styles.homeText}>O</span>
+            <span className={styles.homeText}>M</span>
+            <span className={styles.homeText}>E</span>
+          </button>
         </div>
         <div className={styles.sideBottom}></div>
       </div>

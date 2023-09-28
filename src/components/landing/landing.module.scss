@@ -19,13 +19,13 @@
 .sideTop {
   width: 100%;
   height: 15%;
-  border-left: 1px solid #f0ebe5;
+  border-left: var(--border-color);
 }
 
 .sideBottom {
   width: 100%;
   height: 54%;
-  border-left: 1px solid #f0ebe5;
+  border-left: var(--border-color);
   position: absolute;
   bottom: 0;
 }
@@ -49,12 +49,12 @@
 
 .li {
   line-height: 15px;
-  text-align: center;
   font-size: 15px;
   color: #edeae7;
   font-family: 'Speedy';
   text-align: center;
   position: relative;
+  opacity: 0.5;
 }
 .dot {
   text-align: center;
@@ -108,5 +108,15 @@
   &:hover::before {
     content: '>';
     position: relative;
+    animation: fade-in 0.5s;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
