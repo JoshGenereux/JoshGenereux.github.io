@@ -7,26 +7,24 @@ const Landing = () => {
       <div className={styles.sideBug}>
         <div className={styles.sideTop}></div>
         <div className={styles.sideInfo}>
-          <ul>
-            <li>3</li>
-            <li>9</li>
+          <ul className={styles.ul}>
+            <li className={styles.li}>3</li>
+            <li className={styles.li}>9</li>
             <li className={styles.dot}>.</li>
-            <li>7</li>
-            <li>5</li>
-            <li>8</li>
-            <li>9</li>
-            <li>&nbsp;</li>
-            <li>N</li>
-            <li>&nbsp;</li>
-            <li>8</li>
-            <li>4</li>
+            <li className={styles.li}>7</li>
+            <li className={styles.li}>5</li>
+            <li className={styles.li}>8</li>
+            <li className={styles.li}>9</li>
+            <li className={styles.li}>N</li>
+            <li className={styles.li}>&nbsp;</li>
+            <li className={styles.li}>8</li>
+            <li className={styles.li}>4</li>
             <li className={styles.dot}>.</li>
-            <li>1</li>
-            <li>9</li>
-            <li>1</li>
-            <li>6</li>
-            <li>&nbsp;</li>
-            <li>W</li>
+            <li className={styles.li}>1</li>
+            <li className={styles.li}>9</li>
+            <li className={styles.li}>1</li>
+            <li className={styles.li}>6</li>
+            <li className={styles.li}>W</li>
           </ul>
         </div>
         <div className={styles.sideBottom}></div>
@@ -36,15 +34,23 @@ const Landing = () => {
 
       <div className={styles.links}>
         <div className={styles.linkContainer}>
-          <a href="https://www.linkedin.com/in/joshua-genereux-8292a8223/">
+          <a
+            className={styles.link}
+            href="https://www.linkedin.com/in/joshua-genereux-8292a8223/"
+          >
             &nbsp;LinkedIn
           </a>
         </div>
         <div className={styles.linkContainer}>
-          <a href="https://github.com/JoshGenereux">&nbsp;Github</a>
+          <a className={styles.link} href="https://github.com/JoshGenereux">
+            &nbsp;Github
+          </a>
         </div>
         <div className={styles.linkContainer}>
-          <a href="https://docs.google.com/document/d/1PjXril9NWsKXJ5Crr-fJNhXNuUJ7ncNDkWOFmR2ejYs/edit?usp=sharing">
+          <a
+            className={styles.link}
+            href="https://docs.google.com/document/d/1PjXril9NWsKXJ5Crr-fJNhXNuUJ7ncNDkWOFmR2ejYs/edit?usp=sharing"
+          >
             &nbsp;Resume
           </a>
         </div>

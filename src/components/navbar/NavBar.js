@@ -24,7 +24,7 @@ const NavBar = () => {
       >
         &nbsp;Projects
       </button>
-      <button className={`${styles.button} ${styles.name}`}>&nbsp;Josh</button>
+      <button className={`${styles.button} ${styles.name}`}>Josh</button>
       <button className={styles.button}>&nbsp;Resume</button>
       <button className={styles.button}>&nbsp;Contact</button>
     </div>

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .current {
@@ -36,7 +37,9 @@
   align-items: center;
 }
 
-h1 {
+.jpass,
+.liveFitness,
+.weather {
   font-size: 70px;
   color: #f1efe9;
   font-family: 'StarShield';
@@ -54,7 +57,7 @@ h1 {
   width: 205px;
 }
 
-p {
+.aboutApp {
   font-family: 'Typewriter';
   font-size: 20px;
   text-align: center;
@@ -70,14 +73,14 @@ p {
   bottom: 40%;
 }
 
-ul {
+.techStack {
   margin: 0;
   padding: 0;
   position: relative;
   top: 55px;
 }
 
-li {
+.tech {
   color: #edeae7;
   font-family: 'Speedy';
   font-size: 27px;
@@ -117,4 +120,26 @@ li {
       }
     }
   }
+}
+
+.sideBug {
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sideTop {
+  width: 100%;
+  height: 15%;
+  border-left: 1px solid #f0ebe5;
+}
+
+.sideBottom {
+  width: 100%;
+  height: 54%;
+  border-left: 1px solid #f0ebe5;
+  position: absolute;
+  bottom: 0;
 }
