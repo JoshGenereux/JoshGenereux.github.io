@@ -1,6 +1,6 @@
 .projects {
   width: 1200px;
-  height: 900px;
+  height: 950px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,5 +93,28 @@ li {
   color: #f0ebe5;
   font-size: 20px;
   font-family: 'Speedy';
-  margin-top: 25px;
+  margin-top: 45px;
+  width: 200px;
+  &::after {
+    animation: dotty steps(1, end) 1s infinite;
+    content: '';
+
+    @keyframes dotty {
+      0% {
+        content: '';
+      }
+      25% {
+        content: '.';
+      }
+      50% {
+        content: '..';
+      }
+      75% {
+        content: '...';
+      }
+      100% {
+        content: '';
+      }
+    }
+  }
 }

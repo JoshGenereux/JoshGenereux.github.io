@@ -3,31 +3,45 @@
   height: 100px;
   display: flex;
   width: 1200px;
-  justify-content: center;
-  gap: 25px;
+  justify-content: flex-start;
+  gap: 55px;
   align-items: center;
+  border-bottom: 1px solid #f0ebe5;
 }
 
 .button {
-  content: '';
-  width: 200px;
+  width: 180px;
   font-size: 25px;
+  line-height: 35px;
   color: #f0ebe5;
   background-color: transparent;
   border: none;
   font-family: 'Speedy';
   text-transform: uppercase;
-  transform: 0.6s ease;
   display: flex;
+  justify-content: flex-end;
+  padding: 0px;
 
   &:hover::before {
     content: '>';
+    font-size: 35px;
+    line-height: 35px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
 .name {
   font-size: 45px;
-  &:hover {
+  line-height: 50px;
+
+  &:hover::before {
+    content: '>';
     font-size: 50px;
+    line-height: 50px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }

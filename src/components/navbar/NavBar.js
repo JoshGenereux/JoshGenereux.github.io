@@ -12,7 +12,7 @@ const NavBar = () => {
             .scrollIntoView({ behavior: 'smooth' })
         }
       >
-        Home
+        &nbsp;Home
       </button>
       <button
         className={styles.button}
@@ -22,11 +22,11 @@ const NavBar = () => {
             .scrollIntoView({ behavior: 'smooth' })
         }
       >
-        Projects
+        &nbsp;Projects
       </button>
-      <button className={`${styles.button} ${styles.name}`}>Josh</button>
-      <button className={styles.button}>Resume</button>
-      <button className={styles.button}>Contact</button>
+      <button className={`${styles.button} ${styles.name}`}>&nbsp;Josh</button>
+      <button className={styles.button}>&nbsp;Resume</button>
+      <button className={styles.button}>&nbsp;Contact</button>
     </div>
   );
 };
