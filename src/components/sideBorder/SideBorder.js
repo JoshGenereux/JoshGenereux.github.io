@@ -4,6 +4,8 @@ import styles from './sideBorder.module.scss';
 const SideBorder = (props) => {
   const { down } = props;
 
+  const downArr = down.toUpperCase().split('');
+
   return (
     <div className={styles.border}>
       <div className={styles.sideBug}>
@@ -31,10 +33,9 @@ const SideBorder = (props) => {
                 .scrollIntoView({ behavior: 'smooth' })
             }
           >
-            <span className={styles.homeText}>D</span>
-            <span className={styles.homeText}>O</span>
-            <span className={styles.homeText}>W</span>
-            <span className={styles.homeText}>N</span>
+            {downArr.map((e) => (
+              <span className={styles.homeText}>{e}</span>
+            ))}
           </button>
         </div>
         <div className={styles.sideBottom}></div>
