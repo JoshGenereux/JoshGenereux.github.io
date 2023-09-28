@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.9086e761.css",
-    "main.js": "/static/js/main.393ca475.js",
+    "main.css": "/static/css/main.84518da0.css",
+    "main.js": "/static/js/main.e6ec5857.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/facepic.jpeg": "/static/media/facepic.c26ef284d208bcc5dd8c.jpeg",
+    "static/media/mars.png": "/static/media/mars.9d82894ee6a38c44b135.png",
+    "static/media/earth.png": "/static/media/earth.704a2d0b1a03dbf950e4.png",
+    "static/media/beach.jpeg": "/static/media/beach.c1737e7f0be2e778e5b6.jpeg",
+    "static/media/marssurface.jpeg": "/static/media/marssurface.691aab8d164d7f128a7b.jpeg",
+    "static/media/moonsurface.jpeg": "/static/media/moonsurface.739666f9f47509f4b760.jpeg",
+    "static/media/1952Rheinmetall-85rB.ttf": "/static/media/1952Rheinmetall-85rB.1a03e8a65a747acf6ebe.ttf",
+    "static/media/moon.png": "/static/media/moon.a7483f63fa1b9129b343.png",
+    "static/media/marspic.png": "/static/media/marspic.248c17287b1477704379.png",
+    "static/media/SpeedyRegular-7BLoE.ttf": "/static/media/SpeedyRegular-7BLoE.a61ab31d09d0b30dd46b.ttf",
+    "static/media/StarShieldRegular-K7DjW.ttf": "/static/media/StarShieldRegular-K7DjW.3a0451e65f6f2ef30cef.ttf",
     "index.html": "/index.html",
-    "main.9086e761.css.map": "/static/css/main.9086e761.css.map",
-    "main.393ca475.js.map": "/static/js/main.393ca475.js.map",
+    "main.84518da0.css.map": "/static/css/main.84518da0.css.map",
+    "main.e6ec5857.js.map": "/static/js/main.e6ec5857.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9086e761.css",
-    "static/js/main.393ca475.js"
+    "static/css/main.84518da0.css",
+    "static/js/main.e6ec5857.js"
   ]
 }
