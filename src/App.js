@@ -1,4 +1,5 @@
 import './App.scss';
+import Josh from './components/josh/Josh';
 import Landing from './components/landing/Landing';
 import NavBar from './components/navbar/NavBar';
 import Projects from './components/projects/Projects';
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <Landing />
       <Projects />
+      <Josh />
     </>
   );
 }

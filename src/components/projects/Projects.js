@@ -6,22 +6,12 @@ import mars from '../../assets/marspic.png';
 import moon from '../../assets/moon.png';
 import moonSurface from '../../assets/moonsurface.jpeg';
 import marsSurface from '../../assets/marssurface.jpeg';
+import SideBorder from '../sideBorder/SideBorder';
 
 const Projects = () => {
   return (
     <div className={styles.projects} id="projects">
-      <div className={styles.sideBug}>
-        <div className={styles.sideTop}></div>
-        <div className={styles.sideInfo}>
-          <button className={styles.homeButton}>
-            <span className={styles.homeText}>H</span>
-            <span className={styles.homeText}>O</span>
-            <span className={styles.homeText}>M</span>
-            <span className={styles.homeText}>E</span>
-          </button>
-        </div>
-        <div className={styles.sideBottom}></div>
-      </div>
+      <SideBorder down={'josh'} />
       <div className={styles.current}>current</div>
       <div className={styles.header}>PROJECTS</div>
       <div className={styles.container}>

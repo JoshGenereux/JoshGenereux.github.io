@@ -1,0 +1,135 @@
+.josh {
+  width: 1200px;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sideBar {
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sideTop {
+  width: 100%;
+  height: 20%;
+  border-left: var(--border-color);
+}
+
+.sideBottom {
+  width: 100%;
+  height: 60%;
+  border-left: var(--border-color);
+  position: absolute;
+  bottom: 0;
+}
+
+.picContainer {
+  width: 700px;
+  height: 700px;
+  background-image: url('../../assets/spaceman.jpeg');
+}
+
+.picCover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 47%,
+    rgba(0, 0, 0, 1) 83%
+  );
+}
+
+.aboutContainer {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 40px;
+  color: #dcc8b6;
+  font-family: 'Speedy';
+  position: absolute;
+  bottom: 0;
+  left: 36%;
+}
+
+.headerDescript {
+  color: #dcc8b6;
+  font-size: 15px;
+  font-family: 'Speedy';
+  line-height: 10px;
+}
+
+.header {
+  font-size: 60px;
+  color: #f1efe9;
+  font-family: 'StarShield';
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+
+.clickerContainer {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.aboutClick,
+.hobbiesClick,
+.schoolClick {
+  width: 33%;
+  height: 100%;
+  background-color: #d1b7a0;
+}
+
+.hobbiesClick {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.textContainer {
+  width: 75%;
+  margin-left: 5%;
+  padding-top: 20px;
+}
+
+.aboutText {
+  font-family: 'Typewriter';
+  font-size: 20px;
+  color: #f0ebe5;
+}
+
+.containers {
+  width: 85%;
+  height: 100px;
+  margin-top: 45px;
+  margin-left: 5%;
+  display: flex;
+}
+
+.container {
+  width: 33%;
+  height: 100%;
+  border: 1px solid #d1b7a0;
+}
+
+.buttonContainer {
+  width: 56.2%;
+  height: 35px;
+  margin-left: 33%;
+  display: flex;
+  border: 1px solid #d1b7a0;
+  justify-content: space-between;
+}

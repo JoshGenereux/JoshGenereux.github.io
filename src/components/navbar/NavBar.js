@@ -24,7 +24,14 @@ const NavBar = () => {
       >
         &nbsp;Projects
       </button>
-      <button className={`${styles.button} ${styles.name}`}>Josh</button>
+      <button
+        className={`${styles.button} ${styles.name}`}
+        onClick={() =>
+          document.getElementById('josh').scrollIntoView({ behavior: 'smooth' })
+        }
+      >
+        Josh
+      </button>
       <button className={styles.button}>&nbsp;Resume</button>
       <button className={styles.button}>&nbsp;Contact</button>
     </div>
