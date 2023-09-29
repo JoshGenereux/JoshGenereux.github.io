@@ -29,8 +29,7 @@ const Landing = () => {
         </div>
         <div className={styles.sideBottom}></div>
       </div>
-      <div className={styles.subHeader}>Joshua Genereux</div>
-      <div className={styles.header}>CHASE BUGS. BUILD DREAMS</div>
+      <div className={styles.header}>CHASE BUGS. BUILD DREAMS.</div>
 
       <div className={styles.links}>
         <div className={styles.linkContainer}>

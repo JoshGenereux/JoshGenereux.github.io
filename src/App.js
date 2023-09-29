@@ -9,8 +9,8 @@ function App() {
     <>
       <NavBar />
       <Landing />
-      <Projects />
       <Josh />
+      <Projects />
     </>
   );
 }

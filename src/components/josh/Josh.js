@@ -31,8 +31,6 @@ const Josh = () => {
     setDescription(hobbies.description);
   };
 
-  console.log(top3);
-
   return (
     <div className={styles.josh} id="josh">
       <SideBorder className={styles.SideBorder} down={'resume'} />
@@ -72,7 +70,6 @@ const Josh = () => {
           </button>
         </div>
       </div>
-      <div className={styles.name}>Sofware Developer</div>
     </div>
   );
 };
