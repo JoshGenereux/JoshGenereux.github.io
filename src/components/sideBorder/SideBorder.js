@@ -33,8 +33,10 @@ const SideBorder = (props) => {
                 .scrollIntoView({ behavior: 'smooth' })
             }
           >
-            {downArr.map((e) => (
-              <span className={styles.homeText}>{e}</span>
+            {downArr.map((e, i) => (
+              <span className={styles.homeText} key={i}>
+                {e}
+              </span>
             ))}
           </button>
         </div>

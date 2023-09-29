@@ -9,10 +9,10 @@ const Josh = () => {
     ...about,
   });
   const [index, setIndex] = useState(1);
+
   const switchNext = (e) => {
     e.preventDefault();
     const forward = e.target.id === 'forward';
-    console.log(forward);
     let count = index;
 
     switch (count) {
@@ -51,18 +51,14 @@ const Josh = () => {
 
   return (
     <div className={styles.josh} id="josh">
-      <SideBorder className={styles.SideBorder} down={'resume'} />
+      <SideBorder className={styles.SideBorder} down={'skills'} />
       <div className={styles.picContainer}>
         <div className={styles.picCover}></div>
       </div>
       <div className={styles.aboutContainer}>
         <div className={styles.headerDescript}>{aboutMe.subheader}</div>
         <div className={styles.header}>{aboutMe.header}</div>
-        <div className={styles.clickerContainer}>
-          <div className={`${styles.aboutClick}`}></div>
-          <div className={`${styles.hobbiesClick}`}></div>
-          <div className={`${styles.schoolClick}`}></div>
-        </div>
+        <div className={styles.bar}></div>
         <div className={styles.textContainer}>
           <div className={styles.aboutText}>{aboutMe.about}</div>
         </div>
