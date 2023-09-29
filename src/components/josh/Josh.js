@@ -38,9 +38,10 @@ const Josh = () => {
         if (forward) {
           setAbout({ ...about });
           setIndex(1);
+        } else {
+          setAbout({ ...hobbies });
+          setIndex(2);
         }
-        setAbout({ ...hobbies });
-        setIndex(2);
         break;
       default:
         setAbout({ ...about });
@@ -51,7 +52,7 @@ const Josh = () => {
 
   return (
     <div className={styles.josh} id="josh">
-      <SideBorder className={styles.SideBorder} down={'skills'} />
+      <SideBorder className={styles.SideBorder} down={'projects'} />
       <div className={styles.picContainer}>
         <div className={styles.picCover}></div>
       </div>

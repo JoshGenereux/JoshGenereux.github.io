@@ -1,6 +1,6 @@
 .projects {
   width: 1200px;
-  height: 950px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,20 +25,26 @@
   width: 90%;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid #dcc8b6;
 }
 
 .pick {
-  width: 200px;
+  width: 125px;
+  height: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .pickName {
   font-size: 25px;
-  color: #dcc8b6;
-  font-family: 'Speedy';
+  color: #f0ebe5;
+  font-family: 'Starshield';
   text-align: center;
+
+  &:hover {
+    font-size: 30px;
+  }
 }
 
 .pickUnderline {
@@ -57,7 +63,6 @@
   color: #f0ebe5;
   font-size: 20px;
   font-family: 'Speedy';
-  margin-top: 45px;
   width: 200px;
   &::after {
     animation: dotty steps(1, end) 1s infinite;
