@@ -7,7 +7,7 @@ import jupitor from '../../assets/jupiter.png';
 import moon from '../../assets/moon.png';
 import sun from '../../assets/sun.png';
 import purple from '../../assets/purple.png';
-import { jpass, fitness } from './texts';
+import { jpass, fitness, calories, weather, portfolio } from './texts';
 
 const Projects = () => {
   const namesArr = [
@@ -21,21 +21,46 @@ const Projects = () => {
   const [showProject, setShowProject] = useState({
     jpassState: false,
     fitnessState: false,
+    caloriesState: false,
+    weatherState: false,
+    portfolioState: false,
   });
 
   const switchTo = (e) => {
     e.preventDefault();
     const element = e.target.id;
     let text = '';
-    if (element === 'jupiter') {
-      setShowProject({ ...showProject });
-      setShowProject({ jpassState: true });
-      if (showProject.jpassState && element === 'jupiter') text = jpass;
-    }
-    if (element === 'mars') {
-      setShowProject({ ...showProject });
-      setShowProject({ fitnessState: true });
-      if (showProject.fitnessState && element === 'mars') text = fitness;
+
+    switch (element) {
+      case 'jupiter':
+        setShowProject({ ...showProject });
+        setShowProject({ jpassState: true });
+        text = jpass;
+        break;
+      case 'mars':
+        setShowProject({ ...showProject });
+        setShowProject({ fitnessState: true });
+        text = fitness;
+        break;
+      case 'purple':
+        setShowProject({ ...showProject });
+        setShowProject({ caloriesState: true });
+        text = calories;
+        break;
+      case 'earth':
+        setShowProject({ ...showProject });
+        setShowProject({ weatherState: true });
+        text = weather;
+        break;
+      case 'moon':
+        setShowProject({ ...showProject });
+        setShowProject({ portfolioState: true });
+        text = portfolio;
+        break;
+      default:
+        setShowProject({ ...showProject });
+        setShowProject({ jpassState: true });
+        text = jpass;
     }
 
     const header = document.getElementById('header');
@@ -102,12 +127,16 @@ const Projects = () => {
               className={`${styles.planet} ${styles.planet__two}`}
               src={earth}
               alt=""
+              id="earth"
+              onClick={switchTo}
             />
             <img className={styles.sun} src={sun} alt="" />
             <img
               className={`${styles.planet} ${styles.planet__three}`}
               src={moon}
               alt=""
+              id="moon"
+              onClick={switchTo}
             />
             <img
               className={`${styles.planet} ${styles.planet__four}`}
@@ -120,6 +149,8 @@ const Projects = () => {
               className={`${styles.planet} ${styles.planet__five}`}
               src={purple}
               alt=""
+              id="purple"
+              onClick={switchTo}
             />
           </div>
         </div>
