@@ -4,14 +4,6 @@ import SideBorder from '../sideBorder/SideBorder';
 import { jpass, fitness, calories, weather, portfolio } from './texts';
 
 const Projects = () => {
-  const namesArr = [
-    'JPass',
-    'Live Fitness',
-    'Weather',
-    'Portfolio',
-    'Calorie Tracker',
-  ];
-
   const [showProject, setShowProject] = useState({
     jpassState: false,
     fitnessState: false,
@@ -24,21 +16,18 @@ const Projects = () => {
     e.preventDefault();
 
     const element = e.target.id;
-    let text = '';
-    console.log(e);
+    let text = jpass;
 
     switch (element) {
       case 'jpass':
         setShowProject({ ...showProject });
         setShowProject({ jpassState: true });
         text = jpass;
-        console.log(text);
         break;
       case 'fitness':
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
-        console.log('fitness');
         break;
       case 'calories':
         setShowProject({ ...showProject });
@@ -82,7 +71,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projects} id="projects">
-      <SideBorder down={'josh'} />
+      <SideBorder down={'resume'} />
       <div className={styles.current}>current</div>
       <div className={styles.projectsHeader}>PROJECTS</div>
       <div className={styles.container}>
@@ -91,8 +80,10 @@ const Projects = () => {
           id="jpass"
           onClick={switchTo}
         >
-          <div className={styles.projectHeader}>JPass</div>
-          <div className={styles.projectDescript}>
+          <div className={styles.projectHeader} id="jpass">
+            JPass
+          </div>
+          <div className={styles.projectDescript} id="jpass">
             A React password manager.
           </div>
         </div>
@@ -102,27 +93,45 @@ const Projects = () => {
           id="fitness"
           onClick={switchTo}
         >
-          <div className={styles.projectHeader}>Live Fitness</div>
-          <div className={styles.projectDescript}>
+          <div className={styles.projectHeader} id="fitness">
+            Live Fitness
+          </div>
+          <div className={styles.projectDescript} id="fitness">
             A React password manager.
           </div>
         </div>
 
         <div className={`${styles.middle}`}>
-          <div className={styles.middleHeader} id="header"></div>
-          <div className={styles.middleDescript} id="description"></div>
+          <div className={styles.middleHeader} id="header">
+            {jpass.header}
+          </div>
+          <div className={styles.middleDescript} id="description">
+            {jpass.description}
+          </div>
           <div className={styles.middleInfo}>
             <div className={styles.middleInfo__one}>
-              <span className={styles.top} id="top1"></span>
-              <span className={styles.bottom} id="bottom1"></span>
+              <span className={styles.top} id="top1">
+                {jpass.top1}
+              </span>
+              <span className={styles.bottom} id="bottom1">
+                {jpass.bottom1}
+              </span>
             </div>
             <div className={styles.middleInfo__two}>
-              <span className={styles.top} id="top2"></span>
-              <span className={styles.bottom} id="bottom2"></span>
+              <span className={styles.top} id="top2">
+                {jpass.top2}
+              </span>
+              <span className={styles.bottom} id="bottom2">
+                {jpass.bottom2}
+              </span>
             </div>
             <div className={styles.middleInfo__three}>
-              <span className={styles.top} id="top3"></span>
-              <span className={styles.bottom} id="bottom3"></span>
+              <span className={styles.top} id="top3">
+                {jpass.top3}
+              </span>
+              <span className={styles.bottom} id="bottom3">
+                {jpass.bottom3}
+              </span>
             </div>
           </div>
         </div>
@@ -132,8 +141,12 @@ const Projects = () => {
           id="weather"
           onClick={switchTo}
         >
-          <div className={styles.projectHeader}>Weather</div>
-          <div className={styles.projectDescript}>A React Weather API.</div>
+          <div className={styles.projectHeader} id="weather">
+            Weather
+          </div>
+          <div className={styles.projectDescript} id="weather">
+            A React Weather API.
+          </div>
         </div>
 
         <div
@@ -141,8 +154,12 @@ const Projects = () => {
           id="portfolio"
           onClick={switchTo}
         >
-          <div className={styles.projectHeader}>Portfolio</div>
-          <div className={styles.projectDescript}>React built portfolio.</div>
+          <div className={styles.projectHeader} id="portfolio">
+            Portfolio
+          </div>
+          <div className={styles.projectDescript} id="portfolio">
+            React built portfolio.
+          </div>
         </div>
 
         <div
@@ -150,8 +167,10 @@ const Projects = () => {
           id="calories"
           onClick={switchTo}
         >
-          <div className={styles.projectHeader}>Calorie Tracker</div>
-          <div className={styles.projectDescript}>
+          <div className={styles.projectHeader} id="calories">
+            Calorie Tracker
+          </div>
+          <div className={styles.projectDescript} id="calories">
             A React Complex macro tracker.
           </div>
         </div>

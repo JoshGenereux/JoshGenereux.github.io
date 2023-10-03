@@ -79,9 +79,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: 0.5s ease;
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.2);
   }
 }
 
@@ -92,19 +94,19 @@
 }
 .fitness {
   top: 7%;
-  left: 3%;
+  left: 0%;
 }
 .calories {
   top: 7%;
-  right: 3%;
+  right: 0%;
 }
 .weather {
   bottom: 37%;
-  left: 0%;
+  left: -5%;
 }
 .portfolio {
   bottom: 37%;
-  right: 0%;
+  right: -5%;
 }
 
 .middle {
@@ -141,14 +143,13 @@
   text-align: center;
   font-family: 'StarShield';
   color: #f0ebe5;
-  text-decoration: underline;
 }
 
 .middleDescript {
   font-size: 19px;
   color: #d6c4b5;
   text-align: center;
-  font-family: 'Speedy';
+  font-family: 'Courier';
   line-height: 1;
   margin-top: 15px;
   height: 100px;
@@ -165,7 +166,7 @@
   &__three {
     width: 33.5%;
     height: 100%;
-    border: 1px solid white;
+    border: 1px solid #d6c4b5;
     display: flex;
     flex-direction: column;
     align-items: center;
