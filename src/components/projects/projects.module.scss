@@ -1,6 +1,6 @@
 .projects {
   width: 1200px;
-  height: 900px;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,6 +39,8 @@
   font-size: 20px;
   font-family: 'Speedy';
   width: 200px;
+  margin-bottom: 150px;
+  margin-left: 25px;
   &::after {
     animation: dotty steps(1, end) 1s infinite;
     content: '';

@@ -4,18 +4,41 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  border: solid white 1px;
 }
 
 .subHeader {
-  color: #dcc8b6;
+  color: #f0ebe5;
   font-size: 15px;
   font-family: 'Speedy';
+  position: relative;
 }
 
 .header {
-  font-size: 50px;
-  color: #f0ebe5;
+  font-size: 40px;
+  color: #d6c4b5;
   font-family: 'Speedy';
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  height: 500px;
+  width: 900px;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.skillContainer {
+  width: 250px;
+  font-size: 65px;
+  color: transparent;
+  font-family: 'Speedy';
+  position: relative;
+  text-align: center;
+  -webkit-text-stroke: white 3px;
 }

@@ -12,6 +12,7 @@ function App() {
       <Landing />
       <Josh />
       <Projects />
+      <Skills />
     </>
   );
 }

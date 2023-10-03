@@ -5,14 +5,12 @@ const NavBar = () => {
   return (
     <div className={styles.navbar} id="navBar">
       <button
-        className={styles.button}
+        className={`${styles.button} ${styles.name}`}
         onClick={() =>
-          document
-            .getElementById('navBar')
-            .scrollIntoView({ behavior: 'smooth' })
+          document.getElementById('josh').scrollIntoView({ behavior: 'smooth' })
         }
       >
-        Home
+        About Me
       </button>
       <button
         className={styles.button}
@@ -24,13 +22,16 @@ const NavBar = () => {
       >
         Projects
       </button>
+
       <button
-        className={`${styles.button} ${styles.name}`}
+        className={styles.button}
         onClick={() =>
-          document.getElementById('josh').scrollIntoView({ behavior: 'smooth' })
+          document
+            .getElementById('skills')
+            .scrollIntoView({ behavior: 'smooth' })
         }
       >
-        About Me
+        Skills
       </button>
       <button className={styles.button}>Resume</button>
       <button className={styles.button}>Contact</button>

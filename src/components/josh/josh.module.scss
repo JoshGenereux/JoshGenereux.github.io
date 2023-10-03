@@ -109,14 +109,15 @@
 
 .leftButton,
 .rightButton {
-  background-color: transparent;
-  color: #d1b7a0;
+  background-color: #d1b7a0;
+  color: #f1efe9;
   font-size: 25px;
   font-family: 'Typwriter';
   border: none;
   width: 10%;
   text-align: center;
   padding: 0;
+  transition: 0.2s ease;
   &:hover {
     font-size: 30px;
     cursor: pointer;
