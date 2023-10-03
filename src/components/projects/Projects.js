@@ -13,7 +13,7 @@ const Projects = () => {
   ];
 
   const [showProject, setShowProject] = useState({
-    jpassState: true,
+    jpassState: false,
     fitnessState: false,
     caloriesState: false,
     weatherState: false,
@@ -22,31 +22,35 @@ const Projects = () => {
 
   const switchTo = (e) => {
     e.preventDefault();
+
     const element = e.target.id;
     let text = '';
+    console.log(e);
 
     switch (element) {
-      case 'jupiter':
+      case 'jpass':
         setShowProject({ ...showProject });
         setShowProject({ jpassState: true });
         text = jpass;
+        console.log(text);
         break;
-      case 'mars':
+      case 'fitness':
         setShowProject({ ...showProject });
         setShowProject({ fitnessState: true });
         text = fitness;
+        console.log('fitness');
         break;
-      case 'purple':
+      case 'calories':
         setShowProject({ ...showProject });
         setShowProject({ caloriesState: true });
         text = calories;
         break;
-      case 'earth':
+      case 'weather':
         setShowProject({ ...showProject });
         setShowProject({ weatherState: true });
         text = weather;
         break;
-      case 'moon':
+      case 'portfolio':
         setShowProject({ ...showProject });
         setShowProject({ portfolioState: true });
         text = portfolio;
@@ -82,17 +86,75 @@ const Projects = () => {
       <div className={styles.current}>current</div>
       <div className={styles.projectsHeader}>PROJECTS</div>
       <div className={styles.container}>
-        <div className={`${styles.project} ${styles.jpass}`}>
+        <div
+          className={`${styles.project} ${styles.jpass}`}
+          id="jpass"
+          onClick={switchTo}
+        >
           <div className={styles.projectHeader}>JPass</div>
           <div className={styles.projectDescript}>
-            A React build password manager.
+            A React password manager.
           </div>
         </div>
-        <div className={`${styles.project} ${styles.fitness}`}></div>
-        <div className={`${styles.middle}`}></div>
-        <div className={`${styles.project} ${styles.weather}`}></div>
-        <div className={`${styles.project} ${styles.portfolio}`}></div>
-        <div className={`${styles.project} ${styles.calories}`}></div>
+
+        <div
+          className={`${styles.project} ${styles.fitness}`}
+          id="fitness"
+          onClick={switchTo}
+        >
+          <div className={styles.projectHeader}>Live Fitness</div>
+          <div className={styles.projectDescript}>
+            A React password manager.
+          </div>
+        </div>
+
+        <div className={`${styles.middle}`}>
+          <div className={styles.middleHeader} id="header"></div>
+          <div className={styles.middleDescript} id="description"></div>
+          <div className={styles.middleInfo}>
+            <div className={styles.middleInfo__one}>
+              <span className={styles.top} id="top1"></span>
+              <span className={styles.bottom} id="bottom1"></span>
+            </div>
+            <div className={styles.middleInfo__two}>
+              <span className={styles.top} id="top2"></span>
+              <span className={styles.bottom} id="bottom2"></span>
+            </div>
+            <div className={styles.middleInfo__three}>
+              <span className={styles.top} id="top3"></span>
+              <span className={styles.bottom} id="bottom3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className={`${styles.project} ${styles.weather}`}
+          id="weather"
+          onClick={switchTo}
+        >
+          <div className={styles.projectHeader}>Weather</div>
+          <div className={styles.projectDescript}>A React Weather API.</div>
+        </div>
+
+        <div
+          className={`${styles.project} ${styles.portfolio}`}
+          id="portfolio"
+          onClick={switchTo}
+        >
+          <div className={styles.projectHeader}>Portfolio</div>
+          <div className={styles.projectDescript}>React built portfolio.</div>
+        </div>
+
+        <div
+          className={`${styles.project} ${styles.calories}`}
+          id="calories"
+          onClick={switchTo}
+        >
+          <div className={styles.projectHeader}>Calorie Tracker</div>
+          <div className={styles.projectDescript}>
+            A React Complex macro tracker.
+          </div>
+        </div>
       </div>
       <div className={styles.more}>More to come</div>
     </div>
