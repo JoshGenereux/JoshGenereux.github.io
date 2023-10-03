@@ -13,51 +13,26 @@
   color: #f0ebe5;
   font-size: 15px;
   font-family: 'Speedy';
+  position: relative;
+  top: 40px;
 }
 
 .projectsHeader {
   font-size: 40px;
   color: #d6c4b5;
   font-family: 'Speedy';
-}
-
-.pickerContainer {
-  margin-top: 25px;
-  width: 90%;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #dcc8b6;
-}
-
-.pick {
-  width: 125px;
-  height: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.pickName {
-  font-size: 25px;
-  color: #f0ebe5;
-  font-family: 'Starshield';
+  position: relative;
+  top: 40px;
   text-align: center;
-
-  &:hover {
-    font-size: 30px;
-  }
-}
-
-.pickUnderline {
-  border-bottom: 1px solid #dcc8b6;
 }
 
 .container {
-  width: 1200px;
+  width: 800px;
   height: 800px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .more {
@@ -89,37 +64,6 @@
   }
 }
 
-.jpass {
-  width: 1200px;
-  height: 700px;
-  display: flex;
-}
-
-.infoContainer {
-  width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  padding-top: 100px;
-}
-
-.boxContainer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-}
-
-.box {
-  width: 33%;
-  height: 100%;
-  border: 1px solid #d1b7a0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .header {
   font-size: 60px;
   color: #f1efe9;
@@ -128,80 +72,60 @@
   line-height: 45px;
 }
 
-.about {
-  width: 100%;
-  height: 150px;
-  font-family: 'Courier';
-  font-size: 20px;
-  color: #d1b7a0;
-  margin-top: 20px;
+.project {
+  width: 22%;
+  height: 22%;
+  border: 1px solid white;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.number {
-  font-size: 40px;
-  color: #f1efe9;
-  font-family: 'StarShield';
-  line-height: 45px;
+.jpass {
+  bottom: 14%;
+  left: 39%;
+  border: none;
+}
+.fitness {
+  top: 7%;
+  left: 8%;
+}
+.calories {
+  top: 7%;
+  right: 8%;
+}
+.weather {
+  bottom: 37%;
+  left: 5%;
+}
+.portfolio {
+  bottom: 37%;
+  right: 5%;
 }
 
-.skill {
-  font-size: 15px;
-  color: #dcc8b6;
+.middle {
+  width: 40%;
+  height: 40%;
+  border: 1px solid white;
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  border-radius: 50%;
+}
+
+.projectHeader {
+  font-size: 30px;
+  color: #d6c4b5;
+  text-align: center;
   font-family: 'Speedy';
 }
 
-.picContainer {
-  width: 55%;
-  height: 100%;
-  position: relative;
-}
-
-.planet {
-  width: 25%;
-  position: absolute;
-  filter: grayscale(0.4);
-  border-radius: 50%;
-  transition: transform 0.7s;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.25);
-  }
-
-  &__one {
-    top: 8%;
-    right: 15%;
-  }
-  &__two {
-    top: 40%;
-    left: -25;
-  }
-  &__three {
-    bottom: 10%;
-    left: 10%;
-    z-index: 6;
-    width: 27%;
-  }
-  &__four {
-    bottom: 30%;
-    left: 45%;
-    z-index: 6;
-    width: 30%;
-    box-shadow: -21px -29px 54px 17px rgba(0, 0, 0, 0.3);
-  }
-  &__five {
-    top: 10%;
-    left: 20%;
-  }
-}
-
-.sun {
-  width: 55%;
-  filter: grayscale(0.4);
-  transform: scaleX(-1);
-  z-index: 5;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  border-radius: 50%;
+.projectDescript {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'StarShield';
+  color: #f0ebe5;
+  margin-top: 20px;
 }

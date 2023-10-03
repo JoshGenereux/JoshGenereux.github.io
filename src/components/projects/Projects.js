@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './projects.module.scss';
-import earth from '../../assets/earth.png';
-import mars from '../../assets/marspic.png';
 import SideBorder from '../sideBorder/SideBorder';
-import jupitor from '../../assets/jupiter.png';
-import moon from '../../assets/moon.png';
-import sun from '../../assets/sun.png';
-import purple from '../../assets/purple.png';
 import { jpass, fitness, calories, weather, portfolio } from './texts';
 
 const Projects = () => {
@@ -19,7 +13,7 @@ const Projects = () => {
   ];
 
   const [showProject, setShowProject] = useState({
-    jpassState: false,
+    jpassState: true,
     fitnessState: false,
     caloriesState: false,
     weatherState: false,
@@ -87,73 +81,18 @@ const Projects = () => {
       <SideBorder down={'josh'} />
       <div className={styles.current}>current</div>
       <div className={styles.projectsHeader}>PROJECTS</div>
-      <div className={styles.pickerContainer}>
-        {namesArr.map((name, i) => (
-          <div className={styles.pick} key={i}>
-            <span className={styles.pickName}>{name}</span>
-            <div className={styles.pickUnderline}></div>
-          </div>
-        ))}
-      </div>
       <div className={styles.container}>
-        <div className={styles.jpass}>
-          <div className={styles.infoContainer}>
-            <div className={styles.header} id="header"></div>
-            <div className={styles.about} id="description"></div>
-            <div className={styles.boxContainer}>
-              <div className={styles.box}>
-                <span className={styles.number} id="top1"></span>
-                <span className={styles.skill} id="bottom1"></span>
-              </div>
-              <div className={styles.box}>
-                <span className={styles.number} id="top2"></span>
-                <span className={styles.skill} id="bottom2"></span>
-              </div>
-              <div className={styles.box}>
-                <span className={styles.number} id="top3"></span>
-                <span className={styles.skill} id="bottom3"></span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.picContainer}>
-            <img
-              className={`${styles.planet} ${styles.planet__one}`}
-              src={mars}
-              alt=""
-              id="mars"
-              onClick={switchTo}
-            />
-            <img
-              className={`${styles.planet} ${styles.planet__two}`}
-              src={earth}
-              alt=""
-              id="earth"
-              onClick={switchTo}
-            />
-            <img className={styles.sun} src={sun} alt="" />
-            <img
-              className={`${styles.planet} ${styles.planet__three}`}
-              src={moon}
-              alt=""
-              id="moon"
-              onClick={switchTo}
-            />
-            <img
-              className={`${styles.planet} ${styles.planet__four}`}
-              src={jupitor}
-              alt=""
-              id="jupiter"
-              onClick={switchTo}
-            />
-            <img
-              className={`${styles.planet} ${styles.planet__five}`}
-              src={purple}
-              alt=""
-              id="purple"
-              onClick={switchTo}
-            />
+        <div className={`${styles.project} ${styles.jpass}`}>
+          <div className={styles.projectHeader}>JPass</div>
+          <div className={styles.projectDescript}>
+            A React build password manager.
           </div>
         </div>
+        <div className={`${styles.project} ${styles.fitness}`}></div>
+        <div className={`${styles.middle}`}></div>
+        <div className={`${styles.project} ${styles.weather}`}></div>
+        <div className={`${styles.project} ${styles.portfolio}`}></div>
+        <div className={`${styles.project} ${styles.calories}`}></div>
       </div>
       <div className={styles.more}>More to come</div>
     </div>
