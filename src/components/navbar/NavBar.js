@@ -33,8 +33,16 @@ const NavBar = () => {
       >
         Skills
       </button>
-      <button className={styles.button}>Resume</button>
-      <button className={styles.button}>Contact</button>
+      <button
+        className={styles.button}
+        onClick={() =>
+          document
+            .getElementById('contact')
+            .scrollIntoView({ behavior: 'smooth' })
+        }
+      >
+        Contact
+      </button>
     </div>
   );
 };

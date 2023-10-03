@@ -26,7 +26,6 @@
 .container {
   height: 500px;
   width: 900px;
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -40,5 +39,12 @@
   font-family: 'Speedy';
   position: relative;
   text-align: center;
-  -webkit-text-stroke: white 3px;
+  -webkit-text-stroke: #d6c4b5 2px;
+  transition: 0.7s ease;
+  text-shadow: 6px 5px 16px #a69a8dc2;
+
+  &:hover {
+    transform: scale(1.25);
+    cursor: crosshair;
+  }
 }

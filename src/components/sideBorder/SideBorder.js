@@ -4,7 +4,7 @@ import styles from './sideBorder.module.scss';
 const SideBorder = (props) => {
   const { down } = props;
 
-  const downArr = down.toUpperCase().split('');
+  const downArr = down.toUpperCase().split('') ?? '';
 
   return (
     <div className={styles.border}>

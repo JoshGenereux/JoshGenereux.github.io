@@ -63,7 +63,7 @@
 
 .bar {
   width: 85%;
-  height: 5px;
+  height: 2px;
   margin-top: 10px;
   display: flex;
   background-color: #d1b7a0;
@@ -96,20 +96,20 @@
 .container {
   width: 33%;
   height: 100%;
-  border: 1px solid #d1b7a0;
+  border: 1px solid #d1b7a07d;
 }
 
 .buttonContainer {
   width: 56.2%;
   height: 35px;
   display: flex;
-  border: 1px solid #d1b7a0;
+  border: 1px solid #d1b7a07a;
   justify-content: space-between;
 }
 
 .leftButton,
 .rightButton {
-  background-color: #d1b7a0;
+  background-color: #d1b7a07a;
   color: #f1efe9;
   font-size: 25px;
   font-family: 'Typwriter';
@@ -125,11 +125,11 @@
 }
 
 .leftButton {
-  border-left: 1px solid #d1b7a0;
+  border-left: 1px solid #d1b7a07a;
   transform: scaleX(-1);
 }
 .rightButton {
-  border-left: 1px solid #d1b7a0;
+  border-left: 1px solid #d1b7a07a;
 }
 
 .centerButton {
