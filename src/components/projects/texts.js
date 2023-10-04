@@ -8,6 +8,7 @@ const jpass = {
   bottom2: 'React',
   top3: '20%',
   bottom3: 'CSS',
+  link: 'https://github.com/JoshGenereux/jPass',
 };
 
 const fitness = {
@@ -20,6 +21,7 @@ const fitness = {
   bottom2: 'CSS',
   top3: '15%',
   bottom3: 'HTML',
+  link: 'https://github.com/JoshGenereux/live-fitness',
 };
 
 const weather = {
@@ -32,6 +34,7 @@ const weather = {
   bottom2: 'React',
   top3: '15%',
   bottom3: 'CSS',
+  link: 'https://github.com/JoshGenereux/react-weather',
 };
 
 const portfolio = {
@@ -44,6 +47,7 @@ const portfolio = {
   bottom2: 'React',
   top3: '25%',
   bottom3: 'CSS',
+  link: 'https://github.com/JoshGenereux/joshgenereux.github.io',
 };
 
 const calories = {
@@ -56,6 +60,7 @@ const calories = {
   bottom2: 'React',
   top3: '20%',
   bottom3: 'CSS',
+  link: 'https://github.com/JoshGenereux',
 };
 
 export { jpass, fitness, portfolio, calories, weather };

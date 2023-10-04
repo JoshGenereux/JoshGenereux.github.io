@@ -8,13 +8,6 @@ import crosshair from '../../assets/focus.png';
 const Project = () => {
   const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather', 'Calories'];
   const idArr = ['jpass', 'fitness', 'portfolio', 'weather', 'calories'];
-  const links = {
-    jpass: 'https://github.com/JoshGenereux/jPass',
-    fitness: 'https://github.com/JoshGenereux/live-fitness',
-    portfolio: 'https://github.com/JoshGenereux/joshgenereux.github.io',
-    weather: 'https://github.com/JoshGenereux/react-weather',
-    calories: 'TBD',
-  };
 
   const [showProject, setShowProject] = useState({
     jpassState: false,
@@ -70,6 +63,7 @@ const Project = () => {
     const bottom1 = document.getElementById('bottom1');
     const bottom2 = document.getElementById('bottom2');
     const bottom3 = document.getElementById('bottom3');
+    const link = document.getElementById('link');
 
     header.textContent = text.header;
     description.textContent = text.description;
@@ -79,10 +73,7 @@ const Project = () => {
     bottom1.textContent = text.bottom1;
     bottom2.textContent = text.bottom2;
     bottom3.textContent = text.bottom3;
-  };
-
-  const highlight = (e) => {
-    console.log(e.target.id);
+    link.setAttribute('href', text.link);
   };
 
   return (
@@ -104,10 +95,13 @@ const Project = () => {
           ))}
         </div>
         <div className={`${styles.middle}`}>
-          <div className={styles.middleHeaderContainer} id="header">
-            <span className={styles.middleHeader}>{jpass.header}</span>
-            <a className={styles.projectLink} href="">
-              {'jpass'}
+          <div className={styles.middleHeaderContainer}>
+            <span className={styles.middleHeader} id="header">
+              {jpass.header}
+            </span>
+
+            <a className={styles.link} href={jpass.link} id="link">
+              Github Link{' >'}
             </a>
           </div>
           <div className={styles.middleDescript} id="description">
