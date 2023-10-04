@@ -13,6 +13,7 @@
   font-family: 'Speedy';
   text-align: center;
 }
+
 .picContainer {
   width: 80%;
   height: 70%;
@@ -38,4 +39,45 @@
 .planet {
   width: 700px;
   height: 700px;
+}
+
+form {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameContainer {
+  width: 250px;
+  height: 30px;
+  .nameInput {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.emailContainer {
+  width: 250px;
+  height: 30px;
+  .emailInput {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.textContainer {
+  height: 100px;
+  width: 400px;
+  .textInput {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.button {
+  width: 100px;
 }
