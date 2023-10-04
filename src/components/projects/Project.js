@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './projects.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
+import mars from '../../assets/marspic.png';
 import { jpass, fitness, calories, weather, portfolio } from './texts';
+import crosshair from '../../assets/focus.png';
 
-const Projects = () => {
+const Project = () => {
   const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather', 'Calories'];
+  const idArr = ['jpass', 'fitness', 'portfolio', 'weather', 'calories'];
 
   const [showProject, setShowProject] = useState({
     jpassState: false,
@@ -71,38 +74,28 @@ const Projects = () => {
     bottom3.textContent = text.bottom3;
   };
 
+  const highlight = (e) => {
+    console.log(e.target.id);
+  };
+
   return (
     <div className={styles.projects} id="projects">
       <SideBorder down={'skills'} />
       <div className={styles.current}>current</div>
       <div className={styles.projectsHeader}>PROJECTS</div>
       <div className={styles.container}>
-        <div
-          className={`${styles.project} ${styles.jpass}`}
-          id="jpass"
-          onClick={switchTo}
-        >
-          <div className={styles.projectHeader} id="jpass">
-            JPass
-          </div>
-          <div className={styles.projectDescript} id="jpass">
-            A React password manager.
-          </div>
+        <div className={styles.headersContainer}>
+          {nameArr.map((name, i) => (
+            <div
+              className={`${styles.projectHeader} ${idArr[i]}`}
+              id={idArr[i]}
+              onClick={switchTo}
+              key={i}
+            >
+              {name}
+            </div>
+          ))}
         </div>
-
-        <div
-          className={`${styles.project} ${styles.fitness}`}
-          id="fitness"
-          onClick={switchTo}
-        >
-          <div className={styles.projectHeader} id="fitness">
-            Live Fitness
-          </div>
-          <div className={styles.projectDescript} id="fitness">
-            A React password manager.
-          </div>
-        </div>
-
         <div className={`${styles.middle}`}>
           <div className={styles.middleHeader} id="header">
             {jpass.header}
@@ -137,49 +130,46 @@ const Projects = () => {
             </div>
           </div>
         </div>
-
-        <div
-          className={`${styles.project} ${styles.weather}`}
+        <img src={mars} className={styles.mars} alt="" />
+        <img
+          src={crosshair}
+          className={`${styles.crosshair} ${styles.crosshairOne}`}
+          alt=""
+          onClick={switchTo}
+          id="jpass"
+        />
+        <img
+          src={crosshair}
+          className={`${styles.crosshair} ${styles.crosshairTwo}`}
+          alt=""
+          onClick={switchTo}
+          id="fitness"
+        />
+        <img
+          src={crosshair}
+          className={`${styles.crosshair} ${styles.crosshairThree}`}
+          alt=""
+          onClick={switchTo}
           id="weather"
+        />
+        <img
+          src={crosshair}
+          className={`${styles.crosshair} ${styles.crosshairFour}`}
+          alt=""
           onClick={switchTo}
-        >
-          <div className={styles.projectHeader} id="weather">
-            Weather
-          </div>
-          <div className={styles.projectDescript} id="weather">
-            A React Weather API.
-          </div>
-        </div>
-
-        <div
-          className={`${styles.project} ${styles.portfolio}`}
-          id="portfolio"
-          onClick={switchTo}
-        >
-          <div className={styles.projectHeader} id="portfolio">
-            Portfolio
-          </div>
-          <div className={styles.projectDescript} id="portfolio">
-            React built portfolio.
-          </div>
-        </div>
-
-        <div
-          className={`${styles.project} ${styles.calories}`}
           id="calories"
+        />
+        <img
+          src={crosshair}
+          className={`${styles.crosshair} ${styles.crosshairFive}`}
+          alt=""
           onClick={switchTo}
-        >
-          <div className={styles.projectHeader} id="calories">
-            Calorie Tracker
-          </div>
-          <div className={styles.projectDescript} id="calories">
-            A React Complex macro tracker.
-          </div>
-        </div>
+          id="portfolio"
+        />
       </div>
       <div className={styles.more}>More to come</div>
     </div>
   );
 };
 
-export default Projects;
+export default Project;

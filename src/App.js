@@ -3,7 +3,7 @@ import Contact from './components/contact/Contact';
 import Josh from './components/josh/Josh';
 import Landing from './components/landing/Landing';
 import NavBar from './components/navbar/NavBar';
-import Projects from './components/projects/Projects';
+import Project from './components/projects/Project';
 import Skills from './components/skills/Skills';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Landing />
       <Josh />
-      <Projects />
+      <Project />
       <Skills />
       <Contact />
     </>
