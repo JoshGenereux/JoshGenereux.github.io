@@ -8,6 +8,13 @@ import crosshair from '../../assets/focus.png';
 const Project = () => {
   const nameArr = ['JPass', 'Live Fitness', 'Portfolio', 'Weather', 'Calories'];
   const idArr = ['jpass', 'fitness', 'portfolio', 'weather', 'calories'];
+  const links = {
+    jpass: 'https://github.com/JoshGenereux/jPass',
+    fitness: 'https://github.com/JoshGenereux/live-fitness',
+    portfolio: 'https://github.com/JoshGenereux/joshgenereux.github.io',
+    weather: 'https://github.com/JoshGenereux/react-weather',
+    calories: 'TBD',
+  };
 
   const [showProject, setShowProject] = useState({
     jpassState: false,
@@ -87,7 +94,7 @@ const Project = () => {
         <div className={styles.headersContainer}>
           {nameArr.map((name, i) => (
             <div
-              className={`${styles.projectHeader} ${idArr[i]}`}
+              className={`${styles.projectHeader}`}
               id={idArr[i]}
               onClick={switchTo}
               key={i}
@@ -97,8 +104,11 @@ const Project = () => {
           ))}
         </div>
         <div className={`${styles.middle}`}>
-          <div className={styles.middleHeader} id="header">
-            {jpass.header}
+          <div className={styles.middleHeaderContainer} id="header">
+            <span className={styles.middleHeader}>{jpass.header}</span>
+            <a className={styles.projectLink} href="">
+              {'jpass'}
+            </a>
           </div>
           <div className={styles.middleDescript} id="description">
             {jpass.description}
