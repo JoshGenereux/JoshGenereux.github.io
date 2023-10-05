@@ -31,7 +31,7 @@ const NavBar = () => {
             .scrollIntoView({ behavior: 'smooth' })
         }
       >
-        Skills
+        Resume
       </button>
       <button
         className={styles.button}

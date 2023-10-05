@@ -1,10 +1,10 @@
 .skills {
   width: 1200px;
+  margin-top: 100px;
   height: 900px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -12,39 +12,86 @@
   color: #f0ebe5;
   font-size: 15px;
   font-family: 'Speedy';
-  position: relative;
 }
 
 .header {
   font-size: 40px;
   color: #d6c4b5;
   font-family: 'Speedy';
-  position: relative;
   text-align: center;
+  line-height: 0.5;
+}
+
+.headerBorder {
+  margin-top: 10px;
+  width: 80%;
+  height: 1px;
+  border-bottom: 1px solid #d6c4b597;
 }
 
 .container {
   height: 500px;
-  width: 900px;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.skillContainer {
-  width: 250px;
-  font-size: 65px;
-  color: transparent;
-  font-family: 'Speedy';
-  position: relative;
-  text-align: center;
-  -webkit-text-stroke: #d6c4b5 2px;
-  transition: 0.7s ease;
-  text-shadow: 6px 5px 16px #a69a8dc2;
+.innerContainer {
+  width: 80%;
+  display: flex;
+  margin-bottom: 50px;
+}
 
-  &:hover {
-    transform: scale(1.25);
-    cursor: crosshair;
-  }
+.work,
+.education,
+.skillsName {
+  font-size: 40px;
+  color: #f0ebe5;
+  font-family: 'StarShield';
+  width: 25%;
+}
+
+.descript {
+  width: 75%;
+  font-size: 25px;
+  font-family: 'Courier';
+  color: #d6c4b5;
+}
+
+.dev {
+  color: #f0ebe5;
+  font-family: 'Speedy';
+}
+
+.skillsBox {
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frontEnd {
+  color: #f0ebe5;
+  font-family: 'Speedy';
+  font-size: 25px;
+}
+
+ul.frontList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.frontLi {
+  font-family: 'Courier';
+  color: #d6c4b5;
+  font-size: 20px;
+  text-align: center;
 }
