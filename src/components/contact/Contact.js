@@ -6,7 +6,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('submit');
+    alert('email sent, Thank you!');
   };
 
   return (
