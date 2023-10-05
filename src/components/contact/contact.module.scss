@@ -52,25 +52,23 @@ form {
 }
 
 .nameInput {
-  width: 250px;
+  width: 275px;
   height: 30px;
   background-color: transparent;
   border: 1px solid #dcc8b6b8;
   padding-left: 10px;
+  color: #dcc8b6b3;
+  font-size: 15px;
+  font-family: 'Speedy';
 }
 .nameInput::placeholder {
   color: #dcc8b6b3;
   font-size: 15px;
   font-family: 'Speedy';
 }
-.nameInput:focus {
-  color: #dcc8b6b3;
-  font-size: 15px;
-  font-family: 'Speedy';
-}
 
 .emailInput {
-  width: 250px;
+  width: 275px;
   height: 30px;
   background-color: transparent;
   border: 1px solid #dcc8b6ba;
@@ -94,12 +92,21 @@ form {
     background-color: transparent;
     border: 1px solid #dcc8b6a8;
     padding-left: 10px;
+    color: #dcc8b6b3;
+    font-size: 15px;
+    font-family: 'Speedy';
   }
   .textInput::placeholder {
     color: #dcc8b6b3;
     font-size: 15px;
     font-family: 'Speedy';
   }
+}
+
+.nameInput:focus,
+.textInput:focus,
+.emailInput:focus {
+  outline: 2px solid #dcc8b6;
 }
 
 .button {
