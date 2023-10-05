@@ -51,22 +51,36 @@ form {
   align-items: center;
 }
 
-.nameContainer {
+.nameInput {
   width: 250px;
   height: 30px;
-  .nameInput {
-    width: 100%;
-    height: 100%;
-  }
+  background-color: transparent;
+  border: 1px solid #dcc8b6b8;
+  padding-left: 10px;
+}
+.nameInput::placeholder {
+  color: #dcc8b6b3;
+  font-size: 15px;
+  font-family: 'Speedy';
+}
+.nameInput:focus {
+  border: 2px solid #dcc8b6;
 }
 
-.emailContainer {
+.emailInput {
   width: 250px;
   height: 30px;
-  .emailInput {
-    width: 100%;
-    height: 100%;
-  }
+  background-color: transparent;
+  border: 1px solid #dcc8b6ba;
+  padding-left: 10px;
+  color: #dcc8b6b3;
+  font-size: 15px;
+  font-family: 'Speedy';
+}
+.emailInput::placeholder {
+  color: #dcc8b6b3;
+  font-size: 15px;
+  font-family: 'Speedy';
 }
 
 .textContainer {
@@ -75,9 +89,25 @@ form {
   .textInput {
     width: 100%;
     height: 100%;
+    background-color: transparent;
+    border: 1px solid #dcc8b6a8;
+    padding-left: 10px;
+  }
+  .textInput::placeholder {
+    color: #dcc8b6b3;
+    font-size: 15px;
+    font-family: 'Speedy';
   }
 }
 
 .button {
   width: 100px;
+  background-color: transparent;
+  border: 1px solid #dcc8b6;
+  color: #dcc8b6;
+  font-size: 15px;
+  font-family: 'Speedy';
+  &:hover {
+    cursor: pointer;
+  }
 }
