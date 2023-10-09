@@ -1,56 +1,35 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import styles from './contact.module.scss';
 import SideBorder from '../sideBorder/SideBorder';
 
 const Contact = () => {
-  const email = useRef();
-  const name = useRef();
-  const text = useRef();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const nameValue = name.current.value;
-    const emailValue = email.current.value;
-    const textValue = text.current.value;
-  };
-
   return (
     <div className={styles.contact} id="contact">
       <SideBorder down="" />
       <div className={styles.header}>Contact Me</div>
-      <form onSubmit={handleSubmit}>
-        <div className={styles.nameContainer}>
-          <input
-            id="name"
-            type="text"
-            className={styles.nameInput}
-            placeholder="name"
-            ref={name}
-          />
+      <div className={styles.container}>
+        <div className={styles.linkContainer}>
+          <div className={styles.linkName}>Email</div>
+          <a className={styles.link} href="mailto:josh.genereux13@gmail.com">
+            Josh.Genereux13@gmail.com
+          </a>
         </div>
-        <div className={styles.emailContainer}>
-          <input
-            id="email"
-            type="text"
-            className={styles.emailInput}
-            placeholder="email"
-            ref={email}
-          />
+        <div className={styles.linkContainer}>
+          <div className={styles.linkName}>Github</div>
+          <a href="https://github.com/JoshGenereux" className={styles.link}>
+            Github
+          </a>
         </div>
-        <div className={styles.textContainer}>
-          <textarea
-            id="text"
-            typet="text"
-            className={styles.textInput}
-            placeholder="your message here"
-            ref={text}
-          />
+        <div className={styles.linkContainer}>
+          <div className={styles.linkName}>Linkedin</div>
+          <a
+            className={styles.link}
+            href="https://www.linkedin.com/in/joshua-genereux-8292a8223/"
+          >
+            &nbsp;LinkedIn
+          </a>
         </div>
-        <button type="submit" className={styles.button}>
-          submit
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

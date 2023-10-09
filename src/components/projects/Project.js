@@ -78,7 +78,7 @@ const Project = () => {
 
   return (
     <div className={styles.projects} id="projects">
-      <SideBorder down={'Resume'} />
+      <SideBorder down={'resume'} />
       <div className={styles.current}>current</div>
       <div className={styles.projectsHeader}>PROJECTS</div>
       <div className={styles.container}>

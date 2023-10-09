@@ -4,7 +4,7 @@ import SideBorder from '../sideBorder/SideBorder';
 
 const Skills = () => {
   return (
-    <div className={styles.skills} id="skills">
+    <div className={styles.skills} id="resume">
       <SideBorder down={'contact'} />
       <div className={styles.subHeader}>Discover</div>
       <div className={styles.header}>Resume</div>

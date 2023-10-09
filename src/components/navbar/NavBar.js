@@ -27,7 +27,7 @@ const NavBar = () => {
         className={styles.button}
         onClick={() =>
           document
-            .getElementById('skills')
+            .getElementById('resume')
             .scrollIntoView({ behavior: 'smooth' })
         }
       >
