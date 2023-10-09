@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.45ebbf8d.css",
-    "main.js": "/static/js/main.b0f10256.js",
+    "main.css": "/static/css/main.ea5684e6.css",
+    "main.js": "/static/js/main.c5ffec22.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/mars.png": "/static/media/mars.9d82894ee6a38c44b135.png",
     "static/media/astronaut3.png": "/static/media/astronaut3.213283fcd5fb2bae36d4.png",
@@ -10,12 +10,12 @@
     "static/media/SpeedyRegular-7BLoE.ttf": "/static/media/SpeedyRegular-7BLoE.a61ab31d09d0b30dd46b.ttf",
     "static/media/StarShieldRegular-K7DjW.ttf": "/static/media/StarShieldRegular-K7DjW.3a0451e65f6f2ef30cef.ttf",
     "index.html": "/index.html",
-    "main.45ebbf8d.css.map": "/static/css/main.45ebbf8d.css.map",
-    "main.b0f10256.js.map": "/static/js/main.b0f10256.js.map",
+    "main.ea5684e6.css.map": "/static/css/main.ea5684e6.css.map",
+    "main.c5ffec22.js.map": "/static/js/main.c5ffec22.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45ebbf8d.css",
-    "static/js/main.b0f10256.js"
+    "static/css/main.ea5684e6.css",
+    "static/js/main.c5ffec22.js"
   ]
 }
