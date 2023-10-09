@@ -1,11 +1,26 @@
 import React from 'react';
 import styles from './contact.module.scss';
-import SideBorder from '../sideBorder/SideBorder';
 
 const Contact = () => {
   return (
     <div className={styles.contact} id="contact">
-      <SideBorder down="" />
+      <div className={styles.border}>
+        <div className={styles.borderTop}></div>
+        <button
+          className={styles.homeButton}
+          onClick={() =>
+            document
+              .getElementById('navBar')
+              .scrollIntoView({ behavior: 'smooth' })
+          }
+        >
+          <span className={styles.homeText}>H</span>
+          <span className={styles.homeText}>O</span>
+          <span className={styles.homeText}>M</span>
+          <span className={styles.homeText}>E</span>
+        </button>
+        <div className={styles.borderBottom}></div>
+      </div>
       <div className={styles.header}>Contact Me</div>
       <div className={styles.container}>
         <div className={styles.linkContainer}>
