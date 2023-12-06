@@ -95,3 +95,15 @@ ul.frontList {
   font-size: 20px;
   text-align: center;
 }
+
+@media screen and (max-width: 1174px) {
+  .skills {
+    width: 975px;
+  }
+  .innerContainer {
+    width: 90%;
+  }
+  .headerBorder {
+    width: 90%;
+  }
+}

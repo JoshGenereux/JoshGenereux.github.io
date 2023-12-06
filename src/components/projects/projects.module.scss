@@ -238,3 +238,15 @@
   top: 60%;
   right: 35%;
 }
+
+@media screen and (max-width: 1174px) {
+  .projects {
+    width: 975px;
+  }
+  .container {
+    width: 975px;
+  }
+  .headersContainer {
+    width: 925px;
+  }
+}
