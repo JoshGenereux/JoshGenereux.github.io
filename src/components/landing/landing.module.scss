@@ -1,5 +1,5 @@
 .landing {
-  width: 1200px;
+  width: 1150px;
   height: 865px;
   display: flex;
   flex-direction: column;
@@ -118,5 +118,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1174px) {
+  .landing {
+    width: 975px;
+  }
+  .header {
+    font-size: 95px;
   }
 }

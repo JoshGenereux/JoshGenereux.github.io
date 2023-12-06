@@ -43,3 +43,18 @@ body {
   font-family: 'StarShield';
   src: url('./fonts/StarShieldRegular-K7DjW.ttf');
 }
+
+@media screen and (max-width: 1174px) {
+  body {
+    width: 1174px;
+  }
+  #root {
+    width: 1174px;
+  }
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 600px) {
+}

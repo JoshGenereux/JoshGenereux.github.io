@@ -1,7 +1,7 @@
 .navbar {
   height: 100px;
   display: flex;
-  width: 1200px;
+  width: 1150px;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -40,5 +40,11 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1174px) {
+  .navbar {
+    width: 992px;
   }
 }
